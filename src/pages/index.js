@@ -40,12 +40,12 @@ Home.getInitialProps = async () => {
     return { users };
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => ({ //stateden dönen propsu componentlere bölmek için
     user: state.user,
 });
 
-const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({ getUser }, dispatch);
+const mapDispatchToProps = (dispatch) => { //actionları props olarak componentlere göndermek için ve action değiştiğinde state güncellemesi için
+    return bindActionCreators({ getUser }, dispatch); //dispatch'e actionlara yükü dağıtması için bind ediyoruz.
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home); //o componentlere bunları dağıtıyoruz.
