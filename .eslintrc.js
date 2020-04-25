@@ -30,7 +30,6 @@ module.exports = {
     "rules": {
         "semi":["error", "always"],
         "quotes": ["error", "single"],
-        // "indent": ["error", 4],
         "prefer-const": "error",
         "comma-dangle": ["error", "always-multiline"],
         "prettier/prettier": ["error"],
