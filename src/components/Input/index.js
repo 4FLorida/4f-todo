@@ -40,7 +40,7 @@ const BasicInput = styled.input`
         `};
 
     ${(props) =>
-        !props.isValid &&
+        !props.isValid & props.isValid != undefined &&
         css`
             border: 1px solid ${(props) => props.theme.dangerColor};
             color: ${(props) => props.theme.dangerColor};
